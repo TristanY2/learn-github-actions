@@ -24,7 +24,7 @@ jobs:
           # Required mail subject:
           subject: Github Actions job result
           # Required recipients' addresses:
-          to: ${{secrets.RECIPIENT_EMAIL}}
+          to: ${{secrets.RECIPIENT_MAIL}}
           # Required sender full name (address can be skipped):
           from: ${{secrets.MAIL_USERNAME}} # <user@example.com>
           # Optional plain body:
