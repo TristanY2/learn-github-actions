@@ -2,7 +2,7 @@ name: Task 2 - Run echo hello world in specific time every day
 
 on:
   schedule:
-    - cron: "26 9 * * *"
+    - cron: "30 15 * * *"
 
 jobs:
   scheduleado:
