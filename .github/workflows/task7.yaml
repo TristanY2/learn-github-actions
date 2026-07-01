@@ -1,24 +1,23 @@
 name: Task 7 - Automated Code Linting
-on: push
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   lint-python-code:
     runs-on: ubuntu-latest
     steps:
-      # 1. El robot descarga tu código
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # 2. El robot instala Python usando la Acción OFICIAL y verificada
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
-      # 3. Instalamos el linter estándar de Python (flake8) usando la terminal nativa
       - name: Install Linter
         run: pip install flake8
 
-      # 4. Le ordenamos al linter que revise todo el código de nuestra carpeta
       - name: Run Linter
         run: flake8 .
