@@ -1,0 +1,18 @@
+name: Task 9 - Running Docker
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Construir la Imagen de Docker
+        run: docker build -t mi-app-prueba .
+
+      - name: Probar el Contenedor
+        run: docker run mi-app-prueba echo "He vuelto padre"
