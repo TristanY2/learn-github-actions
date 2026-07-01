@@ -1,4 +1,4 @@
-name: Task 7 - Running test on push
+name: Task 8 - Running test on push
 on:
   push:
     branches:
