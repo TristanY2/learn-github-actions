@@ -10,7 +10,7 @@ obs:
     runs-on: ubuntu-latest
     steps:
       - name: Enviar correo
-        uses:dawidd6/action-send-mail@v3
+        uses: dawidd6/action-send-mail@v3
         with:
           server_address: smtp.gmail.com
           # Server port, default 25:
