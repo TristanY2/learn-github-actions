@@ -9,15 +9,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4 # Clona el repo a la VM de github para poder leer el código
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5 # Instala python
         with:
           python-version: '3.12'
 
-      - name: Install Linter
+      - name: Install Linter # Instala el linter
         run: pip install flake8
 
       - name: Run Linter
-        run: flake8 .
+        run: flake8 . # lo ejecuta en la carpeta del repo sobre todos los .py
