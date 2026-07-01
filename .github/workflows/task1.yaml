@@ -1,7 +1,7 @@
 name: Task 1 - Run echo hello world
 
 on:
-  push:
+  push: # El evento que detecta el yaml
     branches:
       - main
 
@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run hello world
-        run: echo 'hello world'
+        run: echo 'hello world' # comando de terminal
