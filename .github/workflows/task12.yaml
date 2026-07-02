@@ -2,7 +2,7 @@ name: Task 12 - Final
 
 on:
   schedule:
-    - cron: "* * * * *"
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
@@ -19,9 +19,4 @@ jobs:
           github_base_url: 'https://api.github.com'
           repository: ${{ github.repository }}
           retention_days: 0
-          keep_minimum_runs: 5
-          #branches: 'main,develop'
-          events: 'push,workflow_dispatch'
-          keep_pull_requests: false
-          dry_run: false
-          debug: false
+          keep_minimum_runs: 0
