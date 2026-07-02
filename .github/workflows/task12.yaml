@@ -21,9 +21,7 @@ jobs:
           retention_days: 0
           keep_minimum_runs: 5
           #branches: 'main,develop'
-          delete_logs: true
           events: 'push,workflow_dispatch'
-          statuses: 'failure'
           keep_pull_requests: false
           dry_run: false
           debug: false
