@@ -14,4 +14,4 @@ jobs:
       - name: Send hola papu
         env: 
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-        runs: gh issue comment ${{ github.event.issue.number }} --body "¡Hola @${{ github.actor }}! Gracias por la chamba"
+        run: gh issue comment ${{ github.event.issue.number }} --body "¡Hola @${{ github.actor }}! Gracias por la chamba"
