@@ -1,4 +1,4 @@
-name: Loging the person that made the latest commit
+name: Task 6 - Loging the person that made the latest commit
 
 on:
   push:

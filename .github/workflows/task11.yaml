@@ -1,0 +1,17 @@
+name: Task 11 - Greeting issues
+
+on:
+  issues:
+    types: opened
+
+permissions:
+  issues: write
+
+jobs:
+  greeting-the-issue:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Send hola papu
+        env: 
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+        runs: gh issue comment ${{ github.event.issue.number }} --body "¡Hola @${{ github.actor }}! Gracias por la chamba"
