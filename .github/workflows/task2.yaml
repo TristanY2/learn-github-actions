@@ -3,6 +3,7 @@ name: Task 2 - Run echo hello world in specific time every day
 on:
   schedule:
     - cron: "30 * * * *"
+  workflow_dispatch:
 
 jobs:
   scheduleado:
