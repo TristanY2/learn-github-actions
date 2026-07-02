@@ -15,4 +15,4 @@ jobs:
         run: docker build -t mi-app-prueba .
 
       - name: Probar el Contenedor
-        run: docker run mi-app-prueba echo "He vuelto padre"
+        run: docker run mi-app-prueba
