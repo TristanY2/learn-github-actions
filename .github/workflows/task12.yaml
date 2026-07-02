@@ -3,7 +3,7 @@ name: Task 12 - Final
 on:
   schedule:
     - cron: "* * * * *"
-    workflow_dispatch:
+  workflow_dispatch:
 
 permissions:
   actions: write
