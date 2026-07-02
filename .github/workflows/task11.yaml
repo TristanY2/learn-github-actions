@@ -10,7 +10,9 @@ permissions:
 jobs:
   greeting-the-issue:
     runs-on: ubuntu-latest
-    steps: 
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
       - name: Send hola papu
         env: 
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
